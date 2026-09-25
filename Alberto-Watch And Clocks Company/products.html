@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto | Products</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+           <a class="navbar-brand" href="index.html">
+    <span>ALBERTO</span>
+    <small>WATCH & CLOCK COMPANY</small>
+</a>
+
+<div class="visitor-count">
+    Visitors: <span id="visitorNumber">0</span>
+</div>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Store Locator</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">Support</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Products Header -->
+    <section class="products-header">
+        <div class="container text-center">
+
+            <p class="section-title">ALBERTO COLLECTION</p>
+
+            <h1>Our Timepieces</h1>
+
+            <p>
+                Explore our collection of watches designed for every style
+                and every moment.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="product-categories">
+        <div class="container text-center">
+
+           <button class="category-btn active" data-category="all">All Watches</button>
+<button class="category-btn" data-category="vintage">Vintage</button>
+<button class="category-btn" data-category="luxury">Luxury</button>
+<button class="category-btn" data-category="smart">Smart Watches</button>
+
+        </div>
+    </section>
+<!--products cards-->
+<section class="products-list">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Vintage 1 -->
+            <div class="col-md-4">
+                <div class="product-card" data-category="vintage">
+                    <img src="Assets/vintage1.jpg" alt="Alberto Heritage">
+
+                    <div class="product-info">
+                        <p class="watch-type">VINTAGE</p>
+                        <h3>Alberto Heritage</h3>
+                        <p>Classic leather strap with a timeless design.</p>
+                        <h4>Rs. 18,500</h4>
+
+                       <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#heritageModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vintage 2 -->
+            <div class="col-md-4">
+                <div class="product-card" data-category="vintage">
+                    <img src="Assets/vintage2.jpg" alt="Alberto Classic">
+
+                    <div class="product-info">
+                        <p class="watch-type">VINTAGE</p>
+                        <h3>Alberto Classic</h3>
+                        <p>Elegant design inspired by traditional watchmaking.</p>
+                        <h4>Rs. 21,000</h4>
+
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#classicModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury 1 -->
+            <div class="col-md-4">
+                <div class="product-card" data-category="luxury">
+                    <img src="Assets/luxury1.jpg" alt="Alberto Royal">
+
+                    <div class="product-info">
+                        <p class="watch-type">LUXURY</p>
+                        <h3>Alberto Royal</h3>
+                        <p>Premium gold finish with sophisticated detailing.</p>
+                        <h4>Rs. 32,000</h4>
+
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#royalModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury 2 -->
+            <div class="col-md-4">
+                <div class="product-card" data-category="luxury">
+                    <img src="Assets/luxury2.jpg" alt="Alberto Prestige">
+
+                    <div class="product-info">
+                        <p class="watch-type">LUXURY</p>
+                        <h3>Alberto Prestige</h3>
+                        <p>Bold styling with a refined premium finish.</p>
+                        <h4>Rs. 39,500</h4>
+
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#prestigeModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart 1 -->
+            <div class="col-md-4">
+               <div class="product-card" data-category="smart">
+                    <img src="Assets/smart1.jpg" alt="Alberto Smart Pro">
+
+                    <div class="product-info">
+                        <p class="watch-type">SMART WATCH</p>
+                        <h3>Alberto Smart Pro</h3>
+                        <p>Modern features combined with everyday comfort.</p>
+                        <h4>Rs. 24,500</h4>
+
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#smartProModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart 2 -->
+            <div class="col-md-4">
+                <div class="product-card" data-category="smart">
+                    <img src="Assets/smart2.jpg" alt="Alberto Connect">
+
+                    <div class="product-info">
+                        <p class="watch-type">SMART WATCH</p>
+                        <h3>Alberto Connect</h3>
+                        <p>Stay connected with a sleek modern design.</p>
+                        <h4>Rs. 28,000</h4>
+
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#connectModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Heritage Modal -->
+<div class="modal fade" id="heritageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Heritage</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1661980377011-61e36f7bd9d2?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Heritage">
+
+                <p class="watch-type">VINTAGE COLLECTION</p>
+
+                <h3>Alberto Heritage</h3>
+
+                <p>
+                    A classic timepiece featuring a timeless design
+                    and elegant leather strap.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 18,500</p>
+
+                <p><strong>Movement:</strong> Quartz</p>
+
+                <p><strong>Strap:</strong> Leather</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Classic Modal -->
+<div class="modal fade" id="classicModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Classic</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1638827391394-85dda9627671?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Classic">
+
+                <p class="watch-type">VINTAGE COLLECTION</p>
+
+                <h3>Alberto Classic</h3>
+
+                <p>
+                    An elegant timepiece inspired by traditional
+                    watchmaking with a refined classic design.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 21,000</p>
+
+                <p><strong>Movement:</strong> Quartz</p>
+
+                <p><strong>Strap:</strong> Leather</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Royal Modal -->
+<div class="modal fade" id="royalModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Royal</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1748327929572-2ccf5716d3b9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Royal">
+
+                <p class="watch-type">LUXURY COLLECTION</p>
+
+                <h3>Alberto Royal</h3>
+
+                <p>
+                    A premium timepiece featuring a sophisticated
+                    gold finish and elegant detailing.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 32,000</p>
+
+                <p><strong>Movement:</strong> Automatic</p>
+
+                <p><strong>Strap:</strong> Leather</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Prestige Modal -->
+<div class="modal fade" id="prestigeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Prestige</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1746593934502-db43c804a0c1?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Prestige">
+
+                <p class="watch-type">LUXURY COLLECTION</p>
+
+                <h3>Alberto Prestige</h3>
+
+                <p>
+                    A bold and refined timepiece created for those
+                    who appreciate premium style and elegance.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 39,500</p>
+
+                <p><strong>Movement:</strong> Automatic</p>
+
+                <p><strong>Strap:</strong> Leather</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Smart Pro Modal -->
+<div class="modal fade" id="smartProModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Smart Pro</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="https://images.unsplash.com/photo-1660844817855-3ecc7ef21f12?q=80&w=486&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Smart Pro">
+
+                <p class="watch-type">SMART WATCH COLLECTION</p>
+
+                <h3>Alberto Smart Pro</h3>
+
+                <p>
+                    A modern smartwatch designed for everyday comfort,
+                    combining smart features with a sleek and stylish design.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 24,500</p>
+
+                <p><strong>Display:</strong> Digital</p>
+
+                <p><strong>Strap:</strong> Silicone</p>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Connect Modal -->
+<div class="modal fade" id="connectModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Connect</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Connect">
+
+                <p class="watch-type">SMART WATCH COLLECTION</p>
+
+                <h3>Alberto Connect</h3>
+
+                <p>
+                    A sleek modern smartwatch designed to keep you
+                    connected while offering comfort and everyday style.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 28,000</p>
+
+                <p><strong>Display:</strong> Digital</p>
+
+                <p><strong>Strap:</strong> Silicone</p>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--time ticker-->
+<div class="time-ticker">
+    <div class="ticker-content">
+        <span id="currentDate"></span>
+        <span> • </span>
+        <span id="currentTime"></span>
+        <span> • Karachi, Pakistan</span>
+    </div>
+</div>
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3>ALBERTO</h3>
+                <p>Timeless watches crafted with elegance and precision.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="technology.html">Technology</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Karachi, Pakistan</p>
+                <p>+92 300 1234567</p>
+                <p>info@albertoclocks.com</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Alberto Watch & Clock Company. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="jquery-4.0.0.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>

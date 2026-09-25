@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Store Locator | Alberto Watch & Clock Company</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+       <a class="navbar-brand" href="index.html">
+    <span>ALBERTO</span>
+    <small>WATCH & CLOCK COMPANY</small>
+</a>
+
+<div class="visitor-count">
+    Visitors: <span id="visitorNumber">0</span>
+</div>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="technology.html">Technology</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="store.html">Store Locator</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- STORE HEADER -->
+
+<section class="store-header">
+
+    <div class="container text-center">
+
+        <p class="section-title">STORE LOCATOR</p>
+
+        <h1>Find An Alberto Store</h1>
+
+        <p>
+            Visit an Alberto store and experience our
+            watches and clocks in person.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- STORE LOCATOR -->
+
+<section class="locator-section">
+
+    <div class="container">
+
+        <div class="row g-5" >
+
+
+            <!-- STORE LIST -->
+
+            <div class="col-lg-5">
+
+                <p class="section-title">OUR LOCATIONS</p>
+
+                <h2>Find A Store Near You</h2>
+
+                <p class="locator-text">
+                    Explore our store locations and visit us
+                    to discover our collection of watches,
+                    clocks and timepieces.
+                </p>
+
+
+                <!-- STORE 1 -->
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <div class="store-card-content">
+
+                        <h3>Alberto Main Store</h3>
+
+                        <p>
+                            Main Boulevard, Karachi
+                        </p>
+
+                        <p class="store-hours">
+                            Monday – Saturday
+                            <br>
+                            10 AM – 8 PM
+                        </p>
+
+                        <a href="#" class="store-link">
+                            View Store Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STORE 2 -->
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <div class="store-card-content">
+
+                        <h3>Alberto Watch Gallery</h3>
+
+                        <p>
+                            Gulberg, Lahore
+                        </p>
+
+                        <p class="store-hours">
+                            Monday – Saturday
+                            <br>
+                            10 AM – 8 PM
+                        </p>
+
+                        <a href="#" class="store-link">
+                            View Store Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STORE 3 -->
+
+                <div class="store-card">
+
+                    <div class="store-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <div class="store-card-content">
+
+                        <h3>Alberto Timepiece Store</h3>
+
+                        <p>
+                            Blue Area, Islamabad
+                        </p>
+
+                        <p class="store-hours">
+                            Monday – Saturday
+                            <br>
+                            10 AM – 8 PM
+                        </p>
+
+                        <a href="#" class="store-link">
+                            View Store Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAP AREA -->
+
+            <div class="col-lg-7">
+
+                <div class="map-area">
+
+                    <div class="map-content">
+
+                        <i class="bi bi-map"></i>
+
+                        <h3>Explore Our Locations</h3>
+
+                        <p>
+                            Use the map to find an Alberto
+                            store near you.
+                        </p>
+
+
+                        <button class="btn-gold" id="findLocation">
+
+                            <i class="bi bi-crosshair"></i>
+
+                            Find My Location
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- MAP PINS -->
+
+                    <div class="map-pin pin-one">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <div class="map-pin pin-two">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <div class="map-pin pin-three">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STORE BENEFITS -->
+
+<section class="store-benefits">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <p class="section-title">VISIT US</p>
+
+            <h2>Why Visit Our Stores?</h2>
+
+        </div>
+
+
+        <div class="row g-4 mt-4">
+
+
+            <div class="col-md-4">
+
+                <div class="benefit-card">
+
+                    <i class="bi bi-eye"></i>
+
+                    <h3>Explore In Person</h3>
+
+                    <p>
+                        See our watches and clocks up close
+                        and discover their details and designs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="benefit-card">
+
+                    <i class="bi bi-hand-index"></i>
+
+                    <h3>Try Before You Buy</h3>
+
+                    <p>
+                        Explore different styles and find
+                        a timepiece that suits you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="benefit-card">
+
+                    <i class="bi bi-person-check"></i>
+
+                    <h3>Expert Assistance</h3>
+
+                    <p>
+                        Our team can help you choose the
+                        right watch or clock for your needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--time ticker-->
+<div class="time-ticker">
+    <div class="ticker-content">
+        <span id="currentDate"></span>
+        <span> • </span>
+        <span id="currentTime"></span>
+        <span> • Karachi, Pakistan</span>
+    </div>
+</div>
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h3>ALBERTO</h3>
+
+                <p>
+                    Timeless watches crafted with elegance
+                    and precision.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h5>Quick Links</h5>
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="technology.html">Technology</a>
+                <a href="gallery.html">Gallery</a>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h5>Contact Us</h5>
+
+                <p>Karachi, Pakistan</p>
+                <p>+92 300 1234567</p>
+                <p>info@albertoclocks.com</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Alberto Watch & Clock Company.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="jquery-4.0.0.js"></script>
+ <script src="script.js"></script>
+</body>
+
+</html>

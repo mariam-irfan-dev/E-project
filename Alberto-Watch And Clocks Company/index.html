@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Albero-Watch And Clock Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+    <span>ALBERTO</span>
+    <small>WATCH & CLOCK COMPANY</small>
+</a>
+
+<div class="visitor-count">
+    Visitors: <span id="visitorNumber">0</span>
+</div>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="technology.html">Technology</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store Locator</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!--carousel-->
+<section class="hero">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!--Picture 1-->
+            <div class="carousel-item active">
+                <img src="Assets/carousel1.jpg" class="d-block w-100" alt="Luxury Watch">
+
+                <div class="carousel-caption">
+                    <p>TIMELESS ELEGANCE</p>
+                    <h1>Every Second<br>Deserves Style</h1>
+                    <a href="products.html" class="btn btn-gold">Explore Collection</a>
+                </div>
+            </div>
+
+            <!--Picture 2-->
+            <div class="carousel-item">
+                <img src="Assets/carousel2.jpg" class="d-block w-100" alt="Classic Watch">
+
+                <div class="carousel-caption">
+                    <p>CRAFTED WITH PRECISION</p>
+                    <h1>The Art of<br>Perfect Time</h1>
+                    <a href="technology.html" class="btn btn-gold">Discover Technology</a>
+                </div>
+            </div>
+
+            <!--Picture 3-->
+            <div class="carousel-item">
+                <img src="Assets/carousel3.jpg" class="d-block w-100" alt="Premium Watch">
+
+                <div class="carousel-caption">
+                    <p>ALBERTO WATCHES</p>
+                    <h1>Wear Your<br>Moment</h1>
+                    <a href="products.html" class="btn btn-gold">View Watches</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</section>
+<!--Introduction-->
+<section class="about-home" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <p class="section-title">THE ALBERTO STORY</p>
+                <h2>Time, Crafted With Purpose</h2>
+
+                <p>
+                    At Alberto, we believe a watch is more than an instrument
+                    that tells time. It is a reflection of style, personality
+                    and timeless craftsmanship.
+                </p>
+
+                <p>
+                    From classic designs to modern smart technology, every
+                    Alberto timepiece is created with precision and elegance.
+                </p>
+
+                <a href="#about" class="btn btn-dark-green">
+                    Discover Our Story
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="Assets/about.jpg"
+                     class="img-fluid about-image"
+                     alt="Alberto Watch">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--highlights-->
+<section class="highlights">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <h2>25+</h2>
+                <p>Years of Excellence</p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>50+</h2>
+                <p>Unique Designs</p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>100%</h2>
+                <p>Precision Crafted</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--product categories-->
+<section class="categories">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <p class="section-title">EXPLORE OUR COLLECTION</p>
+            <h2>Find Your Perfect Timepiece</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="Assets/category1.jpg" alt="Vintage Watches">
+                    <div class="category-content">
+                        <h3>Vintage Watches</h3>
+                        <p>Classic designs inspired by timeless elegance.</p>
+                        <a href="products.html">Explore Collection →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="Assets/category2.jpg" alt="Luxury Watches">
+                    <div class="category-content">
+                        <h3>Luxury Watches</h3>
+                        <p>Elegant timepieces designed to make a statement.</p>
+                        <a href="products.html">Explore Collection →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="Assets/category3.jpg" alt="Smart Watches">
+                    <div class="category-content">
+                        <h3>Smart Watches</h3>
+                        <p>Modern technology combined with everyday style.</p>
+                        <a href="products.html">Explore Collection →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--featured-->
+<section class="featured">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <p class="section-title">OUR SELECTION</p>
+            <h2>Featured Timepieces</h2>
+            <p>Discover some of our most admired designs.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Watch 1 -->
+            <div class="col-md-4">
+                <div class="watch-card">
+                    <img src="Assets/vintage2.jpg" alt="Alberto Classic Watch">
+
+                    <div class="watch-info">
+                        <p class="watch-type">VINTAGE COLLECTION</p>
+                        <h3>Alberto Classic</h3>
+                        <p>Elegant leather strap with a timeless design.</p>
+                        <h4>Rs. 21,000</h4>
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#classicModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watch 2 -->
+            <div class="col-md-4">
+                <div class="watch-card">
+                    <img src="Assets/luxury1.jpg" alt="Alberto Royal Watch">
+
+                    <div class="watch-info">
+                        <p class="watch-type">LUXURY COLLECTION</p>
+                        <h3>Alberto Royal</h3>
+                        <p>Premium finish created for sophisticated style.</p>
+                        <h4>Rs. 32,000</h4>
+                       <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#royalModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watch 3 -->
+            <div class="col-md-4">
+                <div class="watch-card">
+                    <img src="Assets/smart1.jpg" alt="Alberto Smart Watch">
+
+                    <div class="watch-info">
+                        <p class="watch-type">SMART COLLECTION</p>
+                        <h3>Alberto Smart Pro</h3>
+                        <p>Modern technology designed for everyday life.</p>
+                        <h4>Rs. 24,500</h4>
+                        <button class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#smartProModal">
+    View Details
+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="products.html" class="btn btn-dark-green">
+                View All Products
+            </a>
+        </div>
+
+    </div>
+</section>
+<!--technology-->
+<section class="technology-home">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <img src="Assets/techhome.jpg"
+                     alt="Watch Technology"
+                     class="img-fluid technology-image">
+            </div>
+
+            <div class="col-md-6">
+                <p class="section-title">PRECISION & TECHNOLOGY</p>
+
+                <h2>The Technology Behind Every Tick</h2>
+
+                <p>
+                    Every Alberto timepiece combines careful engineering,
+                    reliable movements and elegant design to deliver
+                    accurate performance every day.
+                </p>
+
+                <p>
+                    Discover the technology and craftsmanship that bring
+                    every Alberto watch to life.
+                </p>
+
+                <a href="technology.html" class="btn btn-dark-green">
+                    Explore Technology
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--contact-->
+<section class="store-cta">
+    <div class="container text-center">
+
+        <p class="section-title">FIND ALBERTO</p>
+
+        <h2>Time Is Better When Shared</h2>
+
+        <p>
+            Visit an Alberto store or get in touch with our team.
+            We are here to help you find the perfect timepiece.
+        </p>
+
+        <div class="mt-4">
+            <a href="store.html" class="btn btn-gold me-2">
+                Find a Store
+            </a>
+
+            <a href="contact.html" class="btn btn-outline-light">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- Classic Modal -->
+<div class="modal fade" id="classicModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Classic</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1638827391394-85dda9627671?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Classic">
+
+                <p class="watch-type">VINTAGE COLLECTION</p>
+
+                <h3>Alberto Classic</h3>
+
+                <p>
+                    An elegant timepiece inspired by traditional
+                    watchmaking with a refined classic design.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 21,000</p>
+
+                <p><strong>Movement:</strong> Quartz</p>
+
+                <p><strong>Strap:</strong> Leather</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Royal Modal -->
+<div class="modal fade" id="royalModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Royal</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1748327929572-2ccf5716d3b9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Royal">
+
+                <p class="watch-type">LUXURY COLLECTION</p>
+
+                <h3>Alberto Royal</h3>
+
+                <p>
+                    A premium timepiece featuring a sophisticated
+                    gold finish and elegant detailing.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 32,000</p>
+
+                <p><strong>Movement:</strong> Automatic</p>
+
+                <p><strong>Strap:</strong> Leather</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Smart Pro Modal -->
+<div class="modal fade" id="smartProModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Alberto Smart Pro</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="https://images.unsplash.com/photo-1660844817855-3ecc7ef21f12?q=80&w=486&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid mb-3"
+                     alt="Alberto Smart Pro">
+
+                <p class="watch-type">SMART WATCH COLLECTION</p>
+
+                <h3>Alberto Smart Pro</h3>
+
+                <p>
+                    A modern smartwatch designed for everyday comfort,
+                    combining smart features with a sleek and stylish design.
+                </p>
+
+                <p><strong>Price:</strong> Rs. 24,500</p>
+
+                <p><strong>Display:</strong> Digital</p>
+
+                <p><strong>Strap:</strong> Silicone</p>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark-green"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--time ticker-->
+<div class="time-ticker">
+    <div class="ticker-content">
+        <span id="currentDate"></span>
+        <span> • </span>
+        <span id="currentTime"></span>
+        <span> • Karachi, Pakistan</span>
+    </div>
+</div>
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3>ALBERTO</h3>
+                <p>Timeless watches crafted with elegance and precision.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="technology.html">Technology</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Karachi, Pakistan</p>
+                <p>+92 300 1234567</p>
+                <p>info@albertoclocks.com</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Alberto Watch & Clock Company. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="jquery-4.0.0.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
